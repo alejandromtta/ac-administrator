@@ -8,7 +8,7 @@ export const GET = withApiAuthRequired(async function shows(req) {
       scopes: ['read:shows']
     });
     const apiPort = process.env.API_PORT || 3001;
-    const response = await fetch(`http://localhost:${apiPort}/api/shows`, {
+    const response = await fetch(`https://ac-administrator.vercel.app/api/shows`, {
       headers: {
         Authorization: `Bearer ${accessToken}`
       }
