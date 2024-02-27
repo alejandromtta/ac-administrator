@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Link from 'next/link';
 import { getSession, withPageAuthRequired } from '@auth0/nextjs-auth0';
 import '../page.css';
 
@@ -44,7 +45,7 @@ export default withPageAuthRequired(
          <td>N/A</td>
          <td className="flex flex-col md:flex-row space-y-[18px] items-center justify-center align-middle text-red-400 md:space-y-0 md:space-x-[18px]">
              <button>Eliminar</button>
-             <button>Editar</button>
+             <button><Link href={`/edit-certified/${item?.id}`}>Editar</Link></button>
          </td>
      </tr>
       ))}

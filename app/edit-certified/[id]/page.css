@@ -1,0 +1,22 @@
+.main{
+    margin:0;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px dashed #e6e4e4;
+    border: 1px solid rgb(0, 0, 0)
+
+}
+ 
+.main td, .main th{
+
+    padding: .625em;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #797878;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main td input{
+    text-align: center;
+}

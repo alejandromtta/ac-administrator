@@ -50,16 +50,6 @@ console.log( useUser())
                     </PageLink>
                   </NavItem>
                   <NavItem>
-                    <PageLink href="/edit" className="nav-link" testId="navbar-ssr">
-                      Editar
-                    </PageLink>
-                  </NavItem>
-                  <NavItem>
-                    <PageLink href="/delete" className="nav-link" testId="navbar-ssr">
-                      Eliminar
-                    </PageLink>
-                  </NavItem>
-                  <NavItem>
                     <PageLink href="/admin" className="nav-link" testId="navbar-external">
                      Gestionar Permisos
                     </PageLink>
@@ -132,7 +122,7 @@ console.log( useUser())
                     <img
                       src={user.picture}
                       alt="Profile"
-                      className="nav-user-profile d-inline-block rounded-circle mr-3"
+                      className="mr-3 nav-user-profile d-inline-block rounded-circle"
                       width="50"
                       height="50"
                       decode="async"
@@ -151,7 +141,7 @@ console.log( useUser())
                 <NavItem id="qsLogoutBtn">
                   <AnchorLink
                     href="/api/auth/logout"
-                    className="btn btn-link p-0"
+                    className="p-0 btn btn-link"
                     icon="power-off"
                     testId="navbar-logout-mobile">
                     Log out
